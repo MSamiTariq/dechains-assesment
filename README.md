@@ -1,7 +1,7 @@
 # xSushi Vault Project
 
 ## Project Overview
-This project is an implementation of an ERC4626-compliant vault for staking Sushi tokens and managing xSushi shares. The contract is designed to support advanced functionalities, including the ability to zap in and out with various tokens through a Uniswap V3 swap router. The vault allows users to deposit tokens, receive xSushi, and handle withdrawals in a secure and efficient manner.
+The objective of this project is to evaluate and showcase skills in Solidity smart contract development, frontend integration, and DeFi protocol design. The main focus is on developing a Tokenized Vault for xSushi using the ERC4626 Vault standard. This vault contract is designed to handle xSushi deposits, issue shares proportionally, and allow users to withdraw their xSushi against their shares. Additionally, the project includes a zap function to facilitate deposits with different tokens that are swapped through Uniswap V3 before staking in the SushiBar to receive xSushi.
 
 ## Project Structure
 ```
@@ -60,10 +60,8 @@ The tests cover the following scenarios:
   - Validations for depositing xSushi and receiving shares proportionally.
 - **Zap In and Zap Out**:
   - Tests for zapping into the vault with Sushi and other tokens like USDC, ensuring that swaps are handled properly.
-  - Validation of multi-hop swaps through WETH.
 - **Reverts and Edge Cases**:
   - Test for zapping with a zero amount using `revertedWithCustomError`.
-  - Tests for insufficient approvals and verifying proper reverts.
 - **Gas Usage**:
   - Verified gas usage for operations to ensure they remain within acceptable limits.
 
@@ -127,7 +125,4 @@ The gas profiler output showed the following values:
 ## Potential Improvements
 - **Slippage Handling**: Adding a slippage parameter to ensure minimum output during swaps can make the contract more robust.
 - **Fee Mechanism**: Implementing a fee collection mechanism could enhance functionality for use cases like protocol revenue generation.
-
-## Conclusion
-This project showcases a well-structured implementation of an ERC4626 vault that integrates with DeFi protocols like SushiBar and Uniswap V3. It follows best practices in Solidity development, including comprehensive testing, gas optimization, and clear documentation.
 
