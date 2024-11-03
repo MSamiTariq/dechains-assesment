@@ -1,3 +1,9 @@
+/*
+Note: For running the tests "Should zap out xSushi and swap it back to USDT" and "Should zap USDT into xSushi and 
+deposit into the vault", you need to impersonate another account with sufficient USDT balance. Comment out line 21 
+and uncomment line 22 in XSushiVault.test.ts to ensure these tests run correctly.
+*/
+
 import { expect } from "chai";
 import { ethers } from "hardhat";
 import {
