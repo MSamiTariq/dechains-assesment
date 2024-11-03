@@ -1,7 +1,7 @@
 # xSushi Vault Project
 
 ## Project Overview
-The objective of this project is to evaluate and showcase skills in Solidity smart contract development, frontend integration, and DeFi protocol design. The main focus is on developing a Tokenized Vault for xSushi using the ERC4626 Vault standard. This vault contract is designed to handle xSushi deposits, issue shares proportionally, and allow users to withdraw their xSushi against their shares. Additionally, the project includes a zap function to facilitate deposits with different tokens that are swapped through Uniswap V3 before staking in the SushiBar to receive xSushi.
+The objective of this project is on developing a Tokenized Vault for xSushi using the ERC4626 Vault standard. This vault contract is designed to handle xSushi deposits, issue shares proportionally, and allow users to withdraw their xSushi against their shares. Additionally, the project includes a zap function to facilitate deposits with different tokens that are swapped through Uniswap V3 before staking in the SushiBar to receive xSushi.
 
 ## Project Structure
 ```
